@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>𝐏𝐑𝐎𝐉𝐄𝐊 𝐊𝐀𝐋𝐊𝐔𝐋𝐀𝐓𝐎𝐑</title>
+  <style>
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .hasil-group {
+      margin-top: -20px;
+    }
+    .hasil-text {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>PROJEK KALKULATOR</h1>
+  <br>
+  <div class="form-group">
+    <input type="number" id="angka1" placeholder="Masukkan angka">
+  </div>
+  <div class="form-group">
+    <label for="tanda">+</label>
+  </div>
+  <div class="form-group">
+    <input type="number" id="angka2" placeholder="Masukkan angka">
+  </div>
+  <div class="form-group">
+    <br>
+    <button onclick="hitung()">Klik untuk hasil</button>
+  </div>
+  <br><br>
+  <div class="hasil-group">
+    <p>Hasil :<span class="hasil-text" id="hasil"></span></p>
+  </div>
+
+  <script>
+    function hitung() {
+      var angka1 = parseFloat(document.getElementById("angka1").value);
+      var angka2 = parseFloat(document.getElementById("angka2").value);
+      var hasil = angka1 + angka2;
+      document.getElementById("hasil").innerHTML = "hello world";
+    }
+  </script>
+</body>
+</html>
